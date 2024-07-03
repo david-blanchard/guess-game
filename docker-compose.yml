@@ -1,0 +1,25 @@
+services:
+  app:
+    build: .
+    container_name: guess
+    volumes:
+      - ./site:/home/guess
+    ports:
+      - "8883:8080"
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    ports:
+      - "3309:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: demo
+      MYSQL_DATABASE: guess
+      MYSQL_USER: mr_demo
+      MYSQL_PASSWORD: demo
+volumes:
+  db_data: {}
