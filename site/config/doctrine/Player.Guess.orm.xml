@@ -4,7 +4,7 @@
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                           https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <entity name="Guess\Domain\Guess\Guess" table="guess">
+    <entity name="Guess\Domain\Player\Guess" table="guess">
 
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
@@ -16,12 +16,12 @@
 
         <many-to-one field="game" target-entity="Guess\Domain\Game\Game" inversed-by="guesses">
             <cascade><cascade-remove /></cascade>
-            <join-column name="game_id" referenced-column-name="id" on-delete="CASCADE" on-update="CASCADE"/>
+            <join-column name="game_id" referenced-column-name="id" on-delete="CASCADE" />
         </many-to-one>
 
         <many-to-one field="player" target-entity="Guess\Domain\Player\Player" inversed-by="guesses">
             <cascade><cascade-remove /></cascade>
-            <join-column name="player_id" referenced-column-name="id" on-delete="CASCADE" on-update="CASCADE"/>
+            <join-column name="player_id" referenced-column-name="id" on-delete="CASCADE" />
         </many-to-one>
 
     </entity>

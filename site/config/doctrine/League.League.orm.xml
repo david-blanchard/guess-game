@@ -11,7 +11,7 @@
         </id>
 
         <field name="name" column="name" length="50" nullable="true" />
-        <field name="slug" column="slug" length="50" nullable="true" />
+        <field name="leagueNameSlugged" column="league_name_slugged" length="50" nullable="true" />
         <field name="logo" column="logo" length="150" nullable="true" />
         <field name="leagueApiId" column="league_api_id" length="150" nullable="true" />
 

@@ -8,4 +8,7 @@ up:
 
 schema-update:
 	docker exec -it guess /home/guess/bin/console doctrine:database:create --if-not-exists
-	docker exec -it guess /home/guess/bin/console doctrine:schema:create
+	docker exec -it guess /home/guess/bin/console doctrine:schema:update --force
+
+test-coverage:
+	docker exec -it guess /home/guess/vendor/bin/phpunit --coverage-html html tests

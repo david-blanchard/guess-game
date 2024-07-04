@@ -6,7 +6,7 @@ class League
 {
     private int $id;
     private string $name;
-    private string $slug;
+    private string $leagueNameSlugged;
     private string $logo;
     private int $leagueApiId;
 
@@ -15,9 +15,10 @@ class League
         return $this->id;
     }
 
-    public function setId(int $id): League
+    public function setId(int $id): self
     {
         $this->id = $id;
+
         return $this;
     }
 
@@ -26,20 +27,22 @@ class League
         return $this->name;
     }
 
-    public function setName(string $name): League
+    public function setName(string $name): self
     {
         $this->name = $name;
+
         return $this;
     }
 
-    public function getSlug(): string
+    public function getLeagueNameSlugged(): string
     {
-        return $this->slug;
+        return $this->leagueNameSlugged;
     }
 
-    public function setSlug(string $slug): League
+    public function setLeagueNameSlugged(string $leagueNameSlugged): self
     {
-        $this->slug = $slug;
+        $this->leagueNameSlugged = $leagueNameSlugged;
+
         return $this;
     }
 
@@ -48,9 +51,10 @@ class League
         return $this->logo;
     }
 
-    public function setLogo(string $logo): League
+    public function setLogo(string $logo): self
     {
         $this->logo = $logo;
+
         return $this;
     }
 
@@ -59,9 +63,10 @@ class League
         return $this->leagueApiId;
     }
 
-    public function setLeagueApiId(int $leagueApiId): League
+    public function setLeagueApiId(int $leagueApiId): self
     {
         $this->leagueApiId = $leagueApiId;
+
         return $this;
     }
 

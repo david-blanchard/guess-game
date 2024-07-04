@@ -1,9 +1,9 @@
 <?php
 
-namespace Guess\Domain\Guess;
+namespace Guess\Domain\Player;
 
-use DateTimeInterface;
 use Guess\Domain\Game\Game;
+use DateTimeInterface;
 use Guess\Domain\Player\Player;
 
 class Guess
@@ -19,9 +19,11 @@ class Guess
         return $this->id;
     }
 
-    public function setId(int $id): void
+    public function setId(int $id): self
     {
         $this->id = $id;
+
+        return $this;
     }
 
     public function getGuess(): string
@@ -29,9 +31,11 @@ class Guess
         return $this->guess;
     }
 
-    public function setGuess(string $guess): void
+    public function setGuess(string $guess): self
     {
         $this->guess = $guess;
+
+        return $this;
     }
 
     public function getCreatedAt(): DateTimeInterface
@@ -39,9 +43,11 @@ class Guess
         return $this->createdAt;
     }
 
-    public function setCreatedAt(DateTimeInterface $createdAt): void
+    public function setCreatedAt(DateTimeInterface $createdAt): self
     {
         $this->createdAt = $createdAt;
+
+        return $this;
     }
 
     public function getGame(): Game
@@ -49,9 +55,11 @@ class Guess
         return $this->game;
     }
 
-    public function setGame(Game $game): void
+    public function setGame(Game $game): self
     {
         $this->game = $game;
+
+        return $this;
     }
 
     public function getPlayer(): Player
@@ -59,9 +67,11 @@ class Guess
         return $this->player;
     }
 
-    public function setPlayer(Player $player): void
+    public function setPlayer(Player $player): self
     {
         $this->player = $player;
+
+        return $this;
     }
 
 }

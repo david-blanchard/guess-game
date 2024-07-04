@@ -34,7 +34,7 @@
             <join-column name="away_team" referenced-column-name="id" on-delete="CASCADE" />
         </many-to-one>
 
-        <one-to-many field="guesses" target-entity="Guess\Domain\Guess\Guess" mapped-by="game">
+        <one-to-many field="guesses" target-entity="Guess\Domain\Player\Guess" mapped-by="game">
             <cascade>
                 <cascade-persist />
                 <cascade-remove />
