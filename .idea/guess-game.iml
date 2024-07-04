@@ -57,6 +57,20 @@
       <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/stopwatch" />
       <excludeFolder url="file://$MODULE_DIR$/site/vendor/doctrine/data-fixtures" />
       <excludeFolder url="file://$MODULE_DIR$/site/vendor/doctrine/doctrine-fixtures-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/lexik/jwt-authentication-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/password-hasher" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/security-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/security-core" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/security-csrf" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/security-http" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/type-info" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

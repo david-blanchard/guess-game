@@ -94,6 +94,20 @@
       <path value="$PROJECT_DIR$/site/vendor/doctrine/doctrine-migrations-bundle" />
       <path value="$PROJECT_DIR$/site/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/site/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/password-hasher" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/site/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/site/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/site/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/site/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/type-info" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
