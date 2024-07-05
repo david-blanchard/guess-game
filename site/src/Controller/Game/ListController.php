@@ -5,7 +5,6 @@ namespace Guess\Controller\Game;
 use Exception;
 use Guess\Application\Handler\Game\ListGameHandler;
 use Guess\Domain\Game\Game;
-use Guess\Domain\League\League;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

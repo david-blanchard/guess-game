@@ -10,6 +10,7 @@ use Guess\Domain\League\League;
 use Guess\Domain\Player\Guess;
 use Guess\Domain\Player\PlayerInterface;
 use Guess\Domain\Team\Team;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 class Game
 {
@@ -134,7 +135,7 @@ class Game
         $this->guesses->add($guess);
     }
 
-    public function hasPlayerGuessed(PlayerInterface $player): bool
+    public function hasPlayerGuessed(PlayerInterface|UserInterface $player): bool
     {
         return count($player->getGuesses()) > 0;
     }
