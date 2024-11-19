@@ -4,6 +4,7 @@ namespace Guess\Controller\Player;
 
 use Exception;
 use Guess\Application\Handler\Player\CreatePlayerHandler;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -16,7 +17,7 @@ class PlayerController
         $this->createPlayer = $createPlayer;
     }
 
-    public function index(Request $request): JsonResponse
+    public function index(LoggerInterface $logger, Request $request): JsonResponse
     {
         $playerArray = json_decode($request->getContent(), true);
 
@@ -30,6 +31,7 @@ class PlayerController
                 ]
             );
         } catch (Exception $e) {
+            $logger->error($e->getMessage());
             return new JsonResponse($e->getMessage());
         }
 

@@ -18,10 +18,10 @@ security:
       security: false
 
     login:
-      pattern: ^/login
+      pattern: ^/api/login
       stateless: true
       json_login:
-        check_path: /login_check
+        check_path: /api/login_check
         success_handler: lexik_jwt_authentication.handler.authentication_success
         failure_handler: lexik_jwt_authentication.handler.authentication_failure
 
@@ -40,9 +40,8 @@ security:
     api:
       pattern: ^/api
       stateless: true
-      provider: users
-      custom_authenticators:
-        - lexik_jwt_authentication.jwt_manager
+      jwt: ~
+
 
 
       # activate different ways to authenticate
