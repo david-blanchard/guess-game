@@ -8,7 +8,7 @@ up:
 
 schema-update:
 	/home/guess/bin/console doctrine:database:create --if-not-exists
-	/home/guess/bin/console doctrine:schema:update --force
+	/home/guess/bin/console doctrine:schema:update --complete --force
 
 test-coverage:
 	/home/guess/vendor/bin/phpunit --coverage-html html tests

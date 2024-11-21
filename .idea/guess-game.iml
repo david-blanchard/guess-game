@@ -121,10 +121,6 @@
       <excludeFolder url="file://$MODULE_DIR$/site/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/maker-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/site/vendor/symfony/process" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/monolog/monolog" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/monolog-bridge" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/monolog-bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
