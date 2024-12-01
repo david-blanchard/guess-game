@@ -1,14 +1,14 @@
-module github.com/fmo/grpc/payments
+module github.com/david-blanchard/guess-game/go/grpc/payments
 
 go 1.22.5
 
 require (
-	github.com/fmo/grpc/protos/golang/payments v0.0.1
+	github.com/david-blanchard/guess-game/go/grpc/protos/golang/payments v0.0.2
 	google.golang.org/grpc v1.66.2
 )
 
 require (
-	github.com/fmo/grpc/protos/golang/discounts v0.0.1 // indirect
+	github.com/david-blanchard/guess-game/go/grpc/protos/golang/discounts v0.0.2 // indirect
 	golang.org/x/net v0.26.0 // indirect
 	golang.org/x/sys v0.21.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
