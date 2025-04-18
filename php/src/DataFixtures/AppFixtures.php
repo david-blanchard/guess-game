@@ -17,7 +17,7 @@ class AppFixtures extends Fixture
        $this->encoder = $encoder;
     }
 
-    public function load(ObjectManager $manager)
+    public function load(ObjectManager $manager): void
     {
         $league = (new League())->setId(1);
         $league->setName('Premier League');
@@ -28,8 +28,8 @@ class AppFixtures extends Fixture
         $manager->persist($league);
 
         $player = new Player();
-        $player->setUsername('fmo');
-        $player->setEmail('test@Test.com');
+        $player->setUsername('mrdemo');
+        $player->setEmail('mrdemo@example.com');
         $player->setPassword($this->encoder->hashPassword($player, '123123'));
 
         $manager->persist($player);
